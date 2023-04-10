@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paginação com HTML e CSS</title>
+	<style>
+		.pagination {
+		  display: flex;
+		  justify-content: center;
+		  margin-top: 20px;
+		}
+
+		.pagination a {
+		  display: inline-block;
+		  padding: 5px 10px;
+		  margin: 0 5px;
+		  border: 1px solid #ccc;
+		  border-radius: 3px;
+		  text-decoration: none;
+		  color: #333;
+		}
+
+		.pagination a:hover {
+		  background-color: #eee;
+		}
+
+		.pagination .prev,
+		.pagination .next {
+		  font-weight: bold;
+		}
+
+		.pagination .page.active {
+		  background-color: #ccc;
+		  color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="pagination">
+	  <a href="#" class="prev">&laquo; Anterior</a>
+	  <a href="#" class="page">1</a>
+	  <a href="#" class="page">2</a>
+	  <a href="#" class="page">3</a>
+	  <a href="#" class="page">4</a>
+	  <a href="#" class="page">5</a>
+	  <a href="#" class="next">Próxima &raquo;</a>
+	</div>
+</body>
+</html>
